@@ -5,7 +5,7 @@ Eksāmena darbs par tēmu "Cikls ar priekšnosacījumu programmēšanas valodā 
 ### Veicamo darbu saraksts
 
 - [x] Projekta uzsākšana un izvietošana GitHub
-- [ ] Prezentācijas uzsākšana
+- [x] Prezentācijas uzsākšana
 - [ ] Mācību materiāla atrašana un iekļaušana prezentācijā
 - [ ] Spēlēs uzsākšana 
 - [ ] Jautājumu izgudrošana
