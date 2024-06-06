@@ -7,6 +7,10 @@ public class Tests {
 
 	public static void main(String[] args) {
 		Metodes.Sveiki();
+		boolean spelet = true;
+		String izvele = "";
+		do {
+			int x = 0;
 		 String[] questions = {
 				 "Kas ir cikls?",
 					"Cik cikli ir kopā Javā?",
@@ -76,15 +80,25 @@ public class Tests {
 		            );
 
 		            // Проверяем правильный ли ответ
-		            int x = 0;
 		            int correctIndex = correctAnswers[qIndex];
 		            if (userAnswer != null && userAnswer.equals(options[correctIndex])) {
 		                x++;
 		            } else {
 		                //сохранять в файл
 		            }
+		            
+		            
 		        }
-		
+		        if(x>5)
+		        Metodes.beigasLabs(x);
+		        else
+		        Metodes.beigasSlikts(x); 
+		        do{
+		    		izvele = (String)JOptionPane.showInputDialog(null, "Vai spēlēsiet atkal? J/N","Vēl viena iespēja!" , JOptionPane.DEFAULT_OPTION,null, null, "J");
+		    		}while(izvele != null && !izvele.equalsIgnoreCase("J") && !izvele.equalsIgnoreCase("N"));
+		        if(izvele.equalsIgnoreCase("N"))
+		        	spelet=false;
+		}while(spelet==true);
 	}
 
 }
