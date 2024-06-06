@@ -8,10 +8,10 @@ Eksāmena darbs par tēmu "Cikls ar priekšnosacījumu programmēšanas valodā 
 - [x] Prezentācijas uzsākšana
 - [x] Mācību materiāla atrašana un iekļaušana prezentācijā
 - [x] Spēlēs uzsākšana 
-- [ ] Jautājumu izgudrošana
-- [ ] 4 atbildes izgudrošana katram jautājumam
-- [ ] Izgudrot ko izmantot spēlēs laikā(Console, JOptionPane, ...)
-- [ ] Pareizas atbildes skaita uzglabāšana
+- [x] Jautājumu izgudrošana
+- [x] 4 atbildes izgudrošana katram jautājumam
+- [x] Izgudrot ko izmantot spēlēs laikā(Console, JOptionPane, ...)
+- [x] Pareizas atbildes skaita uzglabāšana
 - [ ] Saglabāt jautājumus ar nepareizo atbildi failā
 - [ ] Programmas biegās paziņot cik ir pareizas atbildes
 - [ ] Programmas beigās izdrukāt sarakstu ar nepareizi atbildētiem jautājumiem
