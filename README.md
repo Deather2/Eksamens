@@ -13,7 +13,7 @@ Eksāmena darbs par tēmu "Cikls ar priekšnosacījumu programmēšanas valodā 
 - [x] Izgudrot ko izmantot spēlēs laikā(Console, JOptionPane, ...)
 - [x] Pareizas atbildes skaita uzglabāšana
 - [ ] Saglabāt jautājumus ar nepareizo atbildi failā
-- [ ] Programmas biegās paziņot cik ir pareizas atbildes
+- [x] Programmas biegās paziņot cik ir pareizas atbildes
 - [ ] Programmas beigās izdrukāt sarakstu ar nepareizi atbildētiem jautājumiem
 - [ ] 2 UML diagrammas izstrādāšana 
 - [ ] Testa izpildfails izvietots Realeses sadaļā :100:
