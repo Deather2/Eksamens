@@ -1,7 +1,14 @@
+import java.awt.Dimension;
 import java.awt.Image;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class Metodes {
 	public static void Sveiki() {
@@ -30,5 +37,20 @@ public class Metodes {
 		ImageIcon icon = new ImageIcon("sad.png");
 		icon = Metodes.resizeImage(icon, 200, 200);
 		JOptionPane.showMessageDialog(null, "Jūms ir "+x+" pareizas atbildes. Jums vēl vajag trenēties.", "Varētu labāk!",JOptionPane.INFORMATION_MESSAGE,icon);
+	}
+	
+	public static void nepAtb() throws IOException {
+		File file = new File("NepareizasAtbildes.txt");
+        BufferedReader br = new BufferedReader(new FileReader("NepareizasAtbildes.txt"));
+        String izvade;
+        String dati = "";
+        while((izvade=br.readLine()) != null) {
+            dati += izvade + "\n";
+        }
+        JTextArea textArea = new JTextArea(dati);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setPreferredSize(new Dimension(500, 500));
+        JOptionPane.showMessageDialog(null, scrollPane, "Nepareizas Atbildes", JOptionPane.PLAIN_MESSAGE);
+        br.close();
 	}
 }
