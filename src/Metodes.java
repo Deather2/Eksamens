@@ -1,7 +1,6 @@
 import java.awt.Dimension;
 import java.awt.Image;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -40,17 +39,16 @@ public class Metodes {
 	}
 	
 	public static void nepAtb() throws IOException {
-		File file = new File("NepareizasAtbildes.txt");
-        BufferedReader br = new BufferedReader(new FileReader("NepareizasAtbildes.txt"));
-        String izvade;
-        String dati = "";
-        while((izvade=br.readLine()) != null) {
-            dati += izvade + "\n";
-        }
-        JTextArea textArea = new JTextArea(dati);
-        JScrollPane scrollPane = new JScrollPane(textArea);
-        scrollPane.setPreferredSize(new Dimension(500, 500));
-        JOptionPane.showMessageDialog(null, scrollPane, "Nepareizas Atbildes", JOptionPane.PLAIN_MESSAGE);
-        br.close();
+	    BufferedReader br = new BufferedReader(new FileReader("NepareizasAtbildes.txt"));
+	    String izvade;
+	    StringBuilder dati = new StringBuilder();
+	    while((izvade = br.readLine()) != null) {
+	        dati.append(izvade).append("\n");
+	    }
+	    JTextArea textArea = new JTextArea(dati.toString());
+	    JScrollPane scrollPane = new JScrollPane(textArea);
+	    scrollPane.setPreferredSize(new Dimension(500, 500));
+	    JOptionPane.showMessageDialog(null, scrollPane, "Nepareizas Atbildes", JOptionPane.PLAIN_MESSAGE);
+	    br.close();
 	}
 }

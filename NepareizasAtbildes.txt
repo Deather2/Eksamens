@@ -1,29 +1,25 @@
 
 	Jautājumi, uz kuriem Jūs atbildējāt nepareizi
 
-Kas notiek, ja nosacījums while ciklā vienmēr ir patiess?
-
-	--------------------------------------------------
-
-Cik cikli ir kopā Javā?
-
-	--------------------------------------------------
-
-Kāda ir sintakse, kuru izmanto while cikls Java?
-
-	--------------------------------------------------
-
 Kāds būs šāda koda rezultāts? 
 
-int n = 1; 
-while (n <= 3) { 
-System.out.print(n * n + " "); 
-n++; 
+int m = 10; 
+while (m >= 0) { 
+System.out.print(m + " "); 
+m -= 2; 
 }
 
 	--------------------------------------------------
 
-Kur atrodas cikla nosacījums?
+Kas ir cikls ar priekšnosacījumu?
+
+	--------------------------------------------------
+
+Kurš operators tiek izmantots, lai pārtrauktu while ciklu?
+
+	--------------------------------------------------
+
+Kas jāraksta, lai cikls darbojas bezgalīgi?
 
 	--------------------------------------------------
 
@@ -41,6 +37,18 @@ Cik reizes minimāli nostrādās cikls while?
 
 	--------------------------------------------------
 
-Kas jāraksta, lai cikls darbojas bezgalīgi?
+Cik cikli ir kopā Javā?
+
+	--------------------------------------------------
+
+Kurš operators tiek izmantots, lai turpinātu nākamās while cikla iterācijas izpildi?
+
+	--------------------------------------------------
+
+Kas notiek, ja nosacījums while ciklā vienmēr ir patiess?
+
+	--------------------------------------------------
+
+Kur atrodas cikla nosacījums?
 
 	--------------------------------------------------
