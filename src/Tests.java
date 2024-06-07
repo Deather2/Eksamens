@@ -1,16 +1,10 @@
-import java.awt.Dimension;
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 
 public class Tests {
 
@@ -21,7 +15,7 @@ public class Tests {
         
         do {
             int x = 0;
-            String[] questions = {
+            String[] jautajumi = {
                 "Kas ir cikls?",
                 "Cik cikli ir kopā Javā?",
                 "Kas ir cikls ar priekšnosacījumu?",
@@ -39,13 +33,11 @@ public class Tests {
                 "Cik reizes minimāli nostrādās cikls while?"
             };
 
-            // Массив правильных ответов (индексы правильных ответов)
-            int[] correctAnswers = {
+            int[] parAtb = {
                 0,1,2,0,3,3,1,1,2,0,2,1,2,1,3
             };
 
-            // Массив вариантов ответов
-            String[][] answers = {
+            String[][] atb = {
                 {"Process, kurā kāda darbība tiek veikta vairākkārtigi","Tas ir veids, kā izveidot grafiskos elementus Java",
                     "Funkcija, kas veic matemātiskas darbības", "Šis ir atslēgvārds objektu izveidei Java"},
                 {"1","3","2","4"},
@@ -64,45 +56,31 @@ public class Tests {
                 {"3", "2", "1", "0"}
             };
             
-            // Очищаем файл перед началом нового теста
             BufferedWriter bw = new BufferedWriter(new FileWriter("NepareizasAtbildes.txt", false));
             bw.write("\n\tJautājumi, uz kuriem Jūs atbildējāt nepareizi\n");
             bw.close();
 
-            // Создаем список из номеров вопросов и перемешиваем его
-            ArrayList<Integer> questionNumbers = new ArrayList<>();
-            for (int i = 0; i < questions.length; i++) {
-                questionNumbers.add(i);
+            ArrayList<Integer> jautIndeksi = new ArrayList<>();
+            for (int i = 0; i < jautajumi.length; i++) {
+                jautIndeksi.add(i);
             }
-            Collections.shuffle(questionNumbers);
+            Collections.shuffle(jautIndeksi);
 
-            // Берем первые 10 вопросов
-            int numQuestions = 10;
-            for (int i = 0; i < numQuestions; i++) {
-                int qIndex = questionNumbers.get(i);
-                String question = questions[qIndex];
-                String[] options = answers[qIndex];
+            int jautNum = 10;
+            for (int i = 0; i < jautNum; i++) {
+                int jautIndeks = jautIndeksi.get(i);
+                String jaut = jautajumi[jautIndeks];
+                String[] izveles = atb[jautIndeks];
 
-                // Выводим вопрос и варианты ответа с использованием JOptionPane
-                String userAnswer = (String) JOptionPane.showInputDialog(
-                    null,
-                    question,
-                    "Jautājums " + (i + 1),
-                    JOptionPane.QUESTION_MESSAGE,
-                    null,
-                    options,
-                    options[0]
-                );
-          
-                // Проверяем правильный ли ответ
-                int correctIndex = correctAnswers[qIndex];
-                if (userAnswer != null && userAnswer.equals(options[correctIndex])) {
+                String lietAtb = (String) JOptionPane.showInputDialog(null, jaut, "Jautājums " + (i + 1), JOptionPane.QUESTION_MESSAGE,
+                    null, izveles, izveles[0]);
+                int parIndeks = parAtb[jautIndeks];
+                if (lietAtb != null && lietAtb.equals(izveles[parIndeks])) {
                     x++;
                 } else {
-                    //сохранять в файл
-                    BufferedWriter bwAppend = new BufferedWriter(new FileWriter("NepareizasAtbildes.txt", true));
-                    bwAppend.write("\n"+question+"\n\n\t--------------------------------------------------\n");
-                    bwAppend.close();
+                    BufferedWriter bw2 = new BufferedWriter(new FileWriter("NepareizasAtbildes.txt", true));
+                    bw2.write("\n"+jaut+"\n\n\t--------------------------------------------------\n");
+                    bw2.close();
                 }
             }
             

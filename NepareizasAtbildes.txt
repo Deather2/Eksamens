@@ -1,11 +1,29 @@
 
 	Jautājumi, uz kuriem Jūs atbildējāt nepareizi
 
-Kur atrodas cikla nosacījums?
+Kas notiek, ja nosacījums while ciklā vienmēr ir patiess?
 
 	--------------------------------------------------
 
-Kurš operators tiek izmantots, lai pārtrauktu while ciklu?
+Cik cikli ir kopā Javā?
+
+	--------------------------------------------------
+
+Kāda ir sintakse, kuru izmanto while cikls Java?
+
+	--------------------------------------------------
+
+Kāds būs šāda koda rezultāts? 
+
+int n = 1; 
+while (n <= 3) { 
+System.out.print(n * n + " "); 
+n++; 
+}
+
+	--------------------------------------------------
+
+Kur atrodas cikla nosacījums?
 
 	--------------------------------------------------
 
@@ -19,19 +37,7 @@ x -= 2;
 
 	--------------------------------------------------
 
-Kas notiek, ja nosacījums while ciklā vienmēr ir patiess?
-
-	--------------------------------------------------
-
-Cik cikli ir kopā Javā?
-
-	--------------------------------------------------
-
-Kāda ir sintakse, kuru izmanto while cikls Java?
-
-	--------------------------------------------------
-
-Kurš operators tiek izmantots, lai turpinātu nākamās while cikla iterācijas izpildi?
+Cik reizes minimāli nostrādās cikls while?
 
 	--------------------------------------------------
 
