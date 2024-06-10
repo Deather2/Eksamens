@@ -71,9 +71,12 @@ public class Tests {
                 int jautIndeks = jautIndeksi.get(i);
                 String jaut = jautajumi[jautIndeks];
                 String[] izveles = atb[jautIndeks];
-
-                String lietAtb = (String) JOptionPane.showInputDialog(null, jaut, "Jautājums " + (i + 1), JOptionPane.QUESTION_MESSAGE,
+                
+                String lietAtb = "";
+                do {
+                lietAtb = (String) JOptionPane.showInputDialog(null, jaut, "Jautājums " + (i + 1), JOptionPane.QUESTION_MESSAGE,
                     null, izveles, izveles[0]);
+                }while(lietAtb == null);
                 int parIndeks = parAtb[jautIndeks];
                 if (lietAtb != null && lietAtb.equals(izveles[parIndeks])) {
                     x++;
@@ -98,7 +101,7 @@ public class Tests {
             
             do {
                 izvele = (String)JOptionPane.showInputDialog(null, "Vai spēlēsiet atkal? J/N", "Vēl viena iespēja!", JOptionPane.DEFAULT_OPTION, null, null, "J");
-            } while (izvele != null && !izvele.equalsIgnoreCase("J") && !izvele.equalsIgnoreCase("N"));
+            } while (izvele == null || izvele == null && !izvele.equalsIgnoreCase("J") && !izvele.equalsIgnoreCase("N"));
             
             if (izvele.equalsIgnoreCase("N"))
                 spelet = false;

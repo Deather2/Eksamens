@@ -3,6 +3,16 @@
 
 Kāds būs šāda koda rezultāts? 
 
+int n = 1; 
+while (n <= 3) { 
+System.out.print(n * n + " "); 
+n++; 
+}
+
+	--------------------------------------------------
+
+Kāds būs šāda koda rezultāts? 
+
 int m = 10; 
 while (m >= 0) { 
 System.out.print(m + " "); 
@@ -11,15 +21,7 @@ m -= 2;
 
 	--------------------------------------------------
 
-Kas ir cikls ar priekšnosacījumu?
-
-	--------------------------------------------------
-
-Kurš operators tiek izmantots, lai pārtrauktu while ciklu?
-
-	--------------------------------------------------
-
-Kas jāraksta, lai cikls darbojas bezgalīgi?
+Kur atrodas cikla nosacījums?
 
 	--------------------------------------------------
 
@@ -33,11 +35,7 @@ x -= 2;
 
 	--------------------------------------------------
 
-Cik reizes minimāli nostrādās cikls while?
-
-	--------------------------------------------------
-
-Cik cikli ir kopā Javā?
+Kas jāraksta, lai cikls darbojas bezgalīgi?
 
 	--------------------------------------------------
 
@@ -45,10 +43,10 @@ Kurš operators tiek izmantots, lai turpinātu nākamās while cikla iterācijas
 
 	--------------------------------------------------
 
-Kas notiek, ja nosacījums while ciklā vienmēr ir patiess?
+Kāda ir sintakse, kuru izmanto while cikls Java?
 
 	--------------------------------------------------
 
-Kur atrodas cikla nosacījums?
+Cik reizes minimāli nostrādās cikls while?
 
 	--------------------------------------------------
