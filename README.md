@@ -15,5 +15,5 @@ Eksāmena darbs par tēmu "Cikls ar priekšnosacījumu programmēšanas valodā 
 - [x] Saglabāt jautājumus ar nepareizo atbildi failā
 - [x] Programmas biegās paziņot cik ir pareizas atbildes
 - [x] Programmas beigās izdrukāt sarakstu ar nepareizi atbildētiem jautājumiem
-- [ ] 2 UML diagrammas izstrādāšana 
-- [ ] Testa izpildfails izvietots Realeses sadaļā :100:
+- [x] 2 UML diagrammas izstrādāšana 
+- [x] Testa izpildfails izvietots Realeses sadaļā :100:
